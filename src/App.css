@@ -1,6 +1,13 @@
+body {
+    background-color: black;
+}
+
+
 .App {
   text-align: center;
-}
+  font-family: "Gabriel Weiss' Friends Font";
+  color: white
+ }
 
 .App-logo {
   height: 40vmin;
@@ -28,11 +35,90 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.link {
+    padding: 1em;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    color:white;
+    
 }
+
+.form {
+    margin-top: 1.5em;
+}
+
+#friends-li {
+    list-style: none;
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+
+.username {
+    color: RGB(39, 37, 69);
+    border: 2px solid RGB(39, 37, 69);
+    border-radius: 10px;
+    padding: 10px 25px;
+    background: transparent;
+    max-width: 190px;
+    margin-bottom: 1em;
+}
+.username:active {
+    box-shadow: 2px 2px 15px RGB(39, 37, 69) inset;
+   }
+
+.password {
+    color: RGB(39, 37, 69);
+    border: 2px solid RGB(39, 37, 69);
+    border-radius: 10px;
+    padding: 10px 25px;
+    background: transparent;
+    max-width: 190px;
+    margin-bottom: 1em;
+}
+.password:active {
+    box-shadow: 2px 2px 15px RGB(39, 37, 69) inset;
+   }
+
+/* #login-btn {
+    width: 15em;
+    height: 2em;
+} */
+
+/* From uiverse.io by @adamgiebl */
+button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.3em 0.8em 0.9em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    border: none;
+    letter-spacing: 0.05em;
+    border-radius: 16px;
+    margin: 0 auto;
+    cursor: pointer;
+    
+   }
+   
+   button svg {
+    margin-right: 3px;
+    transform: rotate(30deg);
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+    
+   }
+   
+   button span {
+    transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+   }
+   
+   button:hover svg {
+    transform: translateX(5px) rotate(90deg);
+   }
+   
+   button:hover span {
+    transform: translateX(7px);
+   }
